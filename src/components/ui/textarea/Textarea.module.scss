@@ -1,0 +1,31 @@
+@use '../../../theme/mixins' as *;
+
+.shell {
+  width: 100%;
+}
+
+.control {
+  display: block;
+  line-height: var(--semantic-typography-body-lineHeight);
+  min-height: 5rem;
+}
+
+.sm {
+  @include field-base(sm);
+  padding: var(--global-spacing-md) var(--components-field-sizes-sm-paddingX);
+}
+
+.md {
+  @include field-base(md);
+  padding: var(--global-spacing-md) var(--components-field-sizes-md-paddingX);
+}
+
+.lg {
+  @include field-base(lg);
+  padding: var(--global-spacing-md) var(--components-field-sizes-lg-paddingX);
+}
+
+.none { resize: none; }
+.vertical { resize: vertical; }
+.horizontal { resize: horizontal; }
+.both { resize: both; }
